@@ -1,10 +1,11 @@
+// @vitest-environment node
 import { describe, it, expect, vi } from 'vitest'
 import { Keypair } from '@solana/web3.js'
 
 // Mock getConnection to avoid network calls
 vi.mock('../../lib/solana', () => ({
   getConnection: () => ({
-    getLatestBlockhash: async () => ({ blockhash: 'TEST_BLOCKHASH', lastValidBlockHeight: 0 }),
+    getLatestBlockhash: async () => ({ blockhash: '11111111111111111111111111111111', lastValidBlockHeight: 0 }),
   }),
   LAMPORTS_PER_SOL: 1000000000,
 }))
@@ -21,6 +22,6 @@ describe('buildTransferTransaction', () => {
 
     const { base64, recentBlockhash } = await buildTransferTransaction({ from, to, lamports: 1 })
     expect(typeof base64).toBe('string')
-    expect(recentBlockhash).toBe('TEST_BLOCKHASH')
+    expect(recentBlockhash).toBe('11111111111111111111111111111111')
   })
 })
