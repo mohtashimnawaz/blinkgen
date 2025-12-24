@@ -3,11 +3,7 @@ import type { ReactNode } from 'react'
 
 export const metadata = {
   title: 'BlinkGen',
-  description: 'Generate social Blinks for SOL donations and tickets',
-}
 
-export const metadata = {
-  title: 'BlinkGen',
   description: 'Create shareable on-chain Blinks for donations & tickets',
 }
 
