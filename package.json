@@ -8,7 +8,8 @@
     "start": "next start",
     "lint": "next lint",
     "test": "vitest run",
-    "test:watch": "vitest"
+    "test:watch": "vitest",
+    "build:css": "node ./scripts/build-tailwind.js"
   },
   "dependencies": {
     "@solana/web3.js": "^1.86.0",

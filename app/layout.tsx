@@ -9,6 +9,10 @@ export const metadata = {
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
+      <head>
+        {/* Link the compiled Tailwind CSS to ensure utilities are available */}
+        <link rel="stylesheet" href="/tailwind.css" />
+      </head>
       <body>
         <main className="min-h-screen p-8">
           <div className="max-w-4xl mx-auto">{children}</div>

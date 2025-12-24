@@ -1,13 +1,11 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
 html, body, #__next {
   height: 100%;
 }
 
 body {
-  /* Use direct color values to avoid requiring generated utilities during build */
+  /* Light background and text color while Tailwind loads */
   background-color: #f8fafc; /* slate-50 */
   color: #0f172a; /* slate-900 */
 }
