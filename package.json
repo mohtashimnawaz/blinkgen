@@ -6,14 +6,15 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "test": "vitest run",
+    "test:watch": "vitest"
   },
   "dependencies": {
     "next": "14",
     "react": "18",
     "react-dom": "18",
     "@solana/web3.js": "^1.86.0",
-    "@solana/actions": "^0.1.0",
     "clsx": "^1.2.1"
   },
   "devDependencies": {
@@ -23,6 +24,12 @@
     "autoprefixer": "^10.4.0",
     "@types/node": "^20.5.0",
     "@types/react": "^18.2.0",
-    "@types/react-dom": "^18.2.0"
+    "@types/react-dom": "^18.2.0",
+    "vitest": "^0.34.0",
+    "@testing-library/react": "^15.0.0",
+    "@testing-library/user-event": "^14.4.3",
+    "@testing-library/jest-dom": "^6.0.0",
+    "jsdom": "^22.1.0",
+    "msw": "^1.2.1"
   }
 }
