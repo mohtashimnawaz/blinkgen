@@ -1,3 +1,5 @@
+'use client'
+
 import { useState } from 'react'
 import DonateForm from '../../components/DonateForm'
 import PreviewCard from '../../components/PreviewCard'

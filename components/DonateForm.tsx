@@ -37,7 +37,7 @@ export default function DonateForm({ onChange }: { onChange?: (url: string | nul
   if (onChange) onChange(generatedUrl)
 
   return (
-    <form className="p-4 bg-white rounded-md shadow-sm space-y-4" onSubmit={(e) => e.preventDefault()}>
+    <form className="p-4 bg-white rounded-md shadow-sm space-y-4" onSubmit={(e) => e.preventDefault()} aria-label="Generate Blink form">
       <div>
         <label className="block text-sm font-medium text-slate-700">Wallet address</label>
         <input value={to} onChange={(e) => setTo(e.target.value)} className="mt-1 w-full rounded-md border p-2" placeholder="Recipient Pubkey" />
