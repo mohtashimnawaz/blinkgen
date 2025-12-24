@@ -1,11 +1,20 @@
 @import "tailwindcss";
 
+:root {
+  --brand-1: #0ea5e9;
+  --brand-2: #10b981;
+}
+
 html, body, #__next {
   height: 100%;
 }
 
 body {
-  /* Light background and text color while Tailwind loads */
+  /* Fallback while font is loading */
   background-color: #f8fafc; /* slate-50 */
   color: #0f172a; /* slate-900 */
 }
+
+/* small utility polish */
+a { text-decoration: underline }
+button { transition: all 150ms ease }

@@ -1,10 +1,19 @@
 import Link from 'next/link'
 import Hero from '../components/Hero'
 import Features from '../components/Features'
+import Footer from '../components/Footer'
+import Logo from '../components/Logo'
 
 export default function Home() {
   return (
     <div className="space-y-8">
+      <header className="flex items-center justify-between py-4">
+        <Logo />
+        <nav>
+          <Link href="/generate" className="px-3 py-2 rounded-md bg-sky-600 text-white">Create</Link>
+        </nav>
+      </header>
+
       <Hero />
 
       <main className="mt-6">
@@ -21,6 +30,8 @@ export default function Home() {
           </ul>
         </div>
       </main>
+
+      <Footer />
     </div>
   )
 }
