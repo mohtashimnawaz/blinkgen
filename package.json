@@ -1,0 +1,28 @@
+{
+  "name": "blinkgen",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "next": "14",
+    "react": "18",
+    "react-dom": "18",
+    "@solana/web3.js": "^1.86.0",
+    "@solana/actions": "^0.1.0",
+    "clsx": "^1.2.1"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.0",
+    "tailwindcss": "^4.0.0",
+    "postcss": "^8.4.0",
+    "autoprefixer": "^10.4.0",
+    "@types/node": "^20.5.0",
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0"
+  }
+}
