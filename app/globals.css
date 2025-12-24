@@ -7,5 +7,7 @@ html, body, #__next {
 }
 
 body {
-  @apply bg-slate-50 text-slate-900;
+  /* Use direct color values to avoid requiring generated utilities during build */
+  background-color: #f8fafc; /* slate-50 */
+  color: #0f172a; /* slate-900 */
 }
